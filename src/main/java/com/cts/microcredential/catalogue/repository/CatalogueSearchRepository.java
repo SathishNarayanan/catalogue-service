@@ -7,9 +7,9 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface CatalogueSearchRepository extends CrudRepository<String, SKU> {
+public interface CatalogueSearchRepository extends CrudRepository<SKU, String> {
 
-    public SKU findBySkuId(String id);
+    public SKU findBySku(String id);
 
     public List<SKU> findByCategoryId(String categoryId);
 
