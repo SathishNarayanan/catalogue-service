@@ -25,6 +25,6 @@ public class CatalogueService {
     }
 
     public SKU getProduct(String skuId) {
-        return searchRepo.findBySkuId(skuId);
+        return searchRepo.findBySku(skuId);
     }
 }
